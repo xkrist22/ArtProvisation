@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ArtProvisation | about</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <button class="float-button" onclick="go_back()" title="return to the app">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+        </svg>
+    </button>
+
+    <h1>About application</h1>
+    <p>
+        The ArtProvisation application lets you create your custom art in
+        digital improvisation way, just click the buttons and see
+        the curves and dots making its magic! 
+    </p>
+    <p>
+        You can export your canvas into png format and save it on your personal
+        computer. You can also upload any png image to canvas and start making 
+        any digital improvisation from this image. Just use save and load buttons located
+        at toolbar header. Something did not go as planned? If you want to undo last step, use the undo
+        button or press ctrl+z keys. Please note that undo operation is not reversible, you
+        cannot undo the undo. 
+    </p>
+    <p>
+        This tool lets you generate two main elements – curves and dots. These can be
+        generated simply by pressing "draw curves" or "draw dots" buttons. You can easily set
+        curves width, or dots size, by changing the values of minimum and maximum width. 
+        This can be done using the "minimum width/size" and "maximum width/size" sliders.
+        Minimum width (or size) is 1 pixel, maximum is 25. You can also select how
+        many elements should be generated per one click using the "number of elements" slider.
+        You can create up to 50 elements per one click. If you do not want to generate only 
+        black-and-white canvas, then you can change colors of elements and background. Note that
+        if you change the color of the background, you will get the whole new and empty canvas.
+    </p>
+    <p>
+        App is tested on Google Chrome. If you want to dive into more technical details, visit <a href="todo">github page</a> of
+        the project. Application was created as project at FIT VUT, Computer art subject by Jiří
+        Křištof. You can contact me via <a href = "mailto: jirka.kristof17@gmail.com?subject=ArtProvisation">my email</a>.
+        Return back to the app using the arrow below...
+    </p>
+    <h1>What can you create?</h1>
+    <img src="img/ex1.png">
+    <br>
+    <img src="img/ex2.png">
+    <br>
+    <img src="img/ex3.png">
+
+
+    <script>
+        function go_back() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+
+</html>
