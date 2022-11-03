@@ -1,4 +1,11 @@
 /**
+ * @file app.js
+ * @author Jiri Kristof <xkrist22@stud.fit.vutbr.cz>
+ * @date October 2022
+ * @brief File contains class implementing controller of the app
+ */
+
+/**
  * Class encapsulates whole app funcionality
  */
 class app {
@@ -14,9 +21,13 @@ class app {
     }
 
 
+    /**
+     * Method invokes clicking on the non-showed file input
+     */
     select_file() {
         document.getElementById("file_input").click();
     }
+
 
     /**
      * Method for loading the art from file
@@ -66,12 +77,14 @@ class app {
         }
     }
 
+
     /**
      * Method redirects to "about app" info page
      */
     about() {
         window.location.href = "about.html";
     }
+
 
     /**
      * Method invokes change of background
@@ -87,6 +100,7 @@ class app {
         // invoke setting of background
         self.painter.set_background(color);
     }
+
 
     /**
      * Method invokes drawing of specified element
@@ -120,6 +134,7 @@ class app {
         }
     }
 
+    
     /**
      * Method generates random integer number
      * 

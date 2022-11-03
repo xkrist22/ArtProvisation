@@ -1,3 +1,10 @@
+/**
+ * @file painter.js
+ * @author Jiri Kristof <xkrist22@stud.fit.vutbr.cz>
+ * @date October 2022
+ * @brief File contains class implementing painting tools
+ */
+
 const TOOLBAR_WIDTH = 240; // width of leftside toolbar
 
 /**
@@ -120,6 +127,7 @@ class painter {
         self.canvas.fill();
     }
 
+
     /**
      * Method returns random x-axe coordinate
      * @returns integer specifiing x-axe coordinate of canvas
@@ -128,6 +136,7 @@ class painter {
         return Math.floor(Math.random() * self.width)
     }
 
+
     /**
      * Method returns random y-axe coordinate
      * @returns integer specifiing y-axe coordinate of canvas
@@ -135,6 +144,7 @@ class painter {
      random_y() {
         return Math.floor(Math.random() * self.height)
     }
+
 
     /**
      * Method returns copy of canvas
@@ -153,6 +163,7 @@ class painter {
         return new_canvas_box;
     }
 
+    
     /**
      * Method sets canvas, which is inserted into actuall canvas
      * @param {canvas} new_canvas 

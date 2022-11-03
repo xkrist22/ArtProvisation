@@ -1,3 +1,10 @@
+/**
+ * @file stack.js
+ * @author Jiri Kristof <xkrist22@stud.fit.vutbr.cz>
+ * @date October 2022
+ * @brief Method implements stack abstract data type for storing of the history
+ */
+
 const EMPTY_STACK = -1;
 
 /**
@@ -12,6 +19,7 @@ class stack {
         self.head = EMPTY_STACK;
     }
 
+
     /**
      * Method push element to the head of the stack
      * @param {*} elem element to be pushed into stack
@@ -20,6 +28,7 @@ class stack {
         self.head++;
         self.stack[self.head] = elem;
     }
+
 
     /**
      * Method remove and return element from
@@ -37,6 +46,7 @@ class stack {
         return self.stack[self.head + 1];
     }
 
+
     /**
      * Method returns element from the head of the
      *  stack, but it does not remove head element
@@ -52,6 +62,7 @@ class stack {
         return self.stack[self.head];
     }
 
+    
     /**
      * Method returns length of stack
      * @returns {int} number of elements in stack
